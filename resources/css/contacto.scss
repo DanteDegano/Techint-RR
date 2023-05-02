@@ -1,0 +1,177 @@
+@import "_generales";
+@import "_header";
+@import "_menu";
+@import "_modulo_becas";
+@import "_footer";
+
+.contacto{
+    &_body{
+        background-color: #F5F5F5;
+    }
+    &_wrp{
+        padding: 130px 20px;
+        margin: 0 auto;
+        position: relative;
+    }
+    &_titulo{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 42px;
+        &_wrp{
+            margin-bottom: 20px;
+        }
+    }
+    &_decoracion{
+        width: 95px;
+        height: 5px;
+        background-color: $azul;
+        margin-bottom: 15px;
+    }
+    &_subtitulo{
+        font-size: 12px;
+        line-height: 22px;
+        font-style: italic;
+        color: $azul;
+    }
+    &_formulario{
+        position: relative;
+
+        &_exito{
+            &_wrp{
+               position: absolute; 
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               background-color: #F5F5F5;
+               z-index: 2;
+               top: 190px;
+               left: 0px;
+               right: 0px;
+               bottom: 160px;
+               display: none;
+               width: 100%;
+               text-align: center;
+               svg{
+                margin-bottom: 20px;
+               }
+               p{
+                   font-size: 32px;
+                   font-weight: 500;
+                   margin-bottom: 20px;
+                   padding: 0 20px;
+               }
+               button{
+                   width: 166px;
+                   height: 40px;
+                   background-color: black;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   color: white;
+                   border-radius: 20px;
+                   cursor: pointer;
+                   &:hover{
+                       background-color: $celeste_hover;
+                   }
+               }
+            }
+        }
+        &_label{
+            display: block;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #666666;
+        }
+        &_textarea{
+            position: relative;
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            border: 1px solid #E7E7E7;
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding: 15px;
+            font-weight: 500;
+            position: relative;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            resize: none;
+        }
+        .modulo_becas_info_izq_formulario_input{
+            margin-bottom: 15px;
+        }
+        .modulo_becas_info_izq_formulario_wrp i{
+            top: calc(50% - 7px);
+        }
+    }
+    &_error{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        top: 75px;
+        width: 100%;
+        height: 40px;
+        background-color: #FED7D2;
+        color: $rojo;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+
+    .contacto{
+        &_wrp{
+            padding: 140px 50px;
+        }
+        &_titulo{
+            font-size: 24px;
+            &_wrp{
+                margin-bottom: 40px;
+            }
+        }
+        &_formulario{
+            &_exito{
+                &_wrp{
+                    top: 226px;
+                    justify-content: flex-start;
+                    padding-top: 50px;
+                }
+            }
+            &_fila{
+                display: flex;
+                gap: 40px;
+            }
+            &_textarea{
+                width: 680px;
+            }
+            .modulo_becas_info_izq_formulario_input{
+                margin-bottom: 30px;
+                color: #7F7F7F;
+                width: 320px;
+            }
+            .modulo_becas_info_izq_formulario_wrp i{
+                top: calc(50% - 14px);
+                pointer-events: none;
+            }
+            &_btn{
+                &_wrp{
+                    display: flex;
+                    justify-content: flex-end;
+                    max-width: 680px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1350px){
+    .contacto{
+        &_wrp{
+            max-width: 1350px;
+        }
+    }
+}

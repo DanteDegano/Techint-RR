@@ -1,0 +1,114 @@
+.modulo_programas_educativos{
+    padding: 26px 0 20px 0px;
+    position: relative;
+    margin-bottom: 30px;
+    &_tarjeta{
+        width: 285px;
+        height: 320px;
+        padding: 75px 30px;
+        border-radius: 10px;
+        position: relative;
+        &_titulo{
+           font-size: 20px;
+           font-weight: 700;
+           color: white; 
+           margin-bottom: 20px;
+        }
+        &_txt{
+            font-size: 17px;
+            font-weight: 400;
+            color: white; 
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+        &_svg{
+            opacity: 10%;
+            bottom: 0;
+            position: absolute;
+        }
+        &_svg2{
+            opacity: 70%;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+        }
+        &_ver_todos{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+            padding: 3px 12px;
+            border-radius: 16px;
+            span{
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            &:hover{
+                background-color: #0000003a;
+            }
+        }
+        &_link{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+    }
+    h2{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+
+}
+
+.modulo_programas_educativos .rojo{
+    background-color: $rojo;
+}
+
+ .modulo_programas_educativos .naranja{
+    background-color: $naranja;
+}
+
+ .modulo_programas_educativos .azul{
+    background-color: $azul;
+}
+
+ .modulo_programas_educativos .verde{
+    background-color: $verde;
+}
+
+@media only screen and (min-width: 1024px){
+    
+    .modulo_programas_educativos{
+        padding: 50px;
+        h2{
+            font-size: 24px;
+            margin-bottom: 50px;
+            margin-left: 0;
+        }
+        &_wrp{
+            max-width: 1248px;
+            margin: 0 auto;
+        }
+        &_tarjeta{
+            margin-bottom: 10px;
+            &_ver_todos{
+                bottom: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.modulo_la_voz_de_los_protagonistas{
+    background-color: #F1F1F1;
+    padding: 70px 0;
+    height: 372px;
+    margin-bottom: 280px;
+    &_wrp{
+        max-width: 1248px;
+        margin: 0 auto;
+        padding-left: 20px;
+        h2{
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    &_tarjeta{
+        background-color: white;
+        padding: 30px 20px 40px;
+        border-radius: 8px;
+        width: 285px;
+        height: 420px;
+        margin-right: 20px;
+        &_top{
+            display: flex;
+            margin-bottom: 30px;
+            img{
+                flex-shrink: 0;
+                width: 64px;
+                height: 64px;
+                margin-right: 15px;
+                border-radius: 50%;
+            }
+            p{
+                &:first-child{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                &:last-child{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    position: relative;  
+                }
+            }
+        }
+        &_bottom{
+            position: relative;
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                padding: 20px 0;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                -webkit-line-clamp: 9;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: relative;  
+            }
+            svg{
+                position: absolute;
+                &:first-child{
+                    top: 0;
+                    left: 0;
+                }
+                &:last-child{
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    &_tarjeta_reversa{
+        height: 420px;
+        &_top{
+            position: relative;
+            margin-bottom: 30px;
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                padding: 20px 0;
+            }
+            svg{
+                position: absolute;
+                &:first-child{
+                    top: 0;
+                    left: 0;
+                }
+                &:last-child{
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+        &_bottom{
+            display: flex;
+            img{
+                flex-shrink: 0;
+                width: 64px;
+                height: 64px;
+                margin-right: 15px;
+                display: none;
+            }
+            p{
+                &:first-child{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                &:last-child{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.verde{
+    .modulo_la_voz_de_los_protagonistas_tarjeta{
+        &_bottom{
+           svg{
+             #Trazado_8316{
+                 fill: $verde;
+                }  
+             #Trazado_8529{
+                fill: $verde;
+                } 
+            } 
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .modulo_la_voz_de_los_protagonistas{
+        padding: 70px  0 70px 50px;
+        &_wrp{
+            padding: 0;
+            h2{
+                font-size: 24px;
+            }
+        }
+        &_tarjeta{
+            &_top{
+                p{
+                    &:last-child{
+                        font-size: 12px;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1380px){
+    .modulo_la_voz_de_los_protagonistas{
+        padding: 70px  0 70px 0px;
+    }
+}

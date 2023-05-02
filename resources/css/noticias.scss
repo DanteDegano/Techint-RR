@@ -1,0 +1,201 @@
+@import "_generales";
+@import "_header";
+@import "_menu";
+@import "_modulo_popin_contacto";
+@import "_modulo_relaciones_de_la_comunidad";
+@import "_modulo_consulta";
+@import "_noticias";
+@import "_modulo_novedades";
+@import "_redes_sticky";
+@import "_footer";
+
+
+.nota_noticias{
+    padding: 60px 20px;
+    &_links{
+        margin: 0 auto;
+        display: none;
+        gap: 10px;
+        margin-bottom: 27px;
+        font-size: 14px;
+        a{
+            text-decoration: none;
+            color: #0072CE ;
+            &:visited{
+                color: #0072CE;
+                text-decoration: none;
+            }
+            &:hover{
+                text-decoration: underline #0072CE;
+            }
+        }
+    }
+    &_titulo{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        &_wrp{
+            margin: 0 auto;
+        }
+    }
+    &_decoracion{
+        width: 95px;
+        height: 5px;
+        background-color: $azul;
+        margin-bottom: 20px;
+    }
+    &_btn{
+        width: 280px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 30px;
+        &:hover{
+            background-color: $azul;
+        }
+        svg{
+            margin-left: 10px;
+        }
+        &_wrp{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &_buscar{
+        background-color: #A4D1F0;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &_nulo{
+            background-color: #FDAFA6;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            &_input{
+                background-color: transparent;
+                border: none;
+                width: 98%;
+                font-size: 18px;
+                font-style: italic;
+                color: $rojo;
+                &::placeholder{
+                    color: $rojo;
+                }
+            }  
+        }
+        svg{
+            path{
+                fill{
+                    color: #0072CE;
+                }
+            }
+        }
+        &_input{
+            background-color: transparent;
+            border: none;
+            width: 98%;
+            font-size: 18px;
+            font-style: italic;
+            :focus-visible{
+                border: none;
+            }
+            &::placeholder{
+                font-size: 18px;
+                color: black;
+            }
+        }
+    }
+    &_texto_error{
+        text-align: center;
+        font-size: 32px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 75px 20px 200px;
+        font-weight: 500;
+    }
+    &_cuerpo_fila_noticias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .nota_noticias_cuerpo_fila_noticias{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px 20px;
+        margin: 0 auto 30px;
+        padding: 0px;
+        flex-wrap: wrap;
+
+    }
+    .nota_noticias{
+        padding: 100px 50px 50px;
+        &_links{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        &_titulo{
+            font-size: 32px;
+        }
+        &_decoracion{
+            margin-bottom: 33px;
+        }
+        &_btn{
+            margin-bottom: 50px;
+            width: 255px;
+        }
+        &_texto_error{
+            padding: 75px 0 400px;
+        }
+        &_buscar{
+            &_nulo{
+                &_input{
+                    font-size: 28px;
+                    &::placeholder{
+                        font-size: 28px;
+                    }
+                }
+            }
+            &_input{
+                font-size: 28px;
+                &::placeholder{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width: 1248px){
+
+    .nota_noticias{
+        &_links{
+            max-width: 1248px;
+        }
+        &_titulo_wrp{
+            max-width: 1248px;
+        }
+    }
+    .nota_noticias_cuerpo_fila_noticias{
+        max-width: 1248px;
+    }
+
+}

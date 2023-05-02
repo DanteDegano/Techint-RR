@@ -1,0 +1,45 @@
+.modulo_alianzas{
+    padding: 50px 20px;
+    &_titulo{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &_empresas{
+
+        &_fila{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            svg{
+                flex-shrink: 0;
+                height: 45px;
+                width: 140px;
+                margin: 10px 5px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .modulo_alianzas{
+        padding: 50px;
+        margin-bottom: 50px;
+        p{
+            font-size: 24px;
+        }
+        &_wrp{
+            max-width: 1248px;
+            margin: 0 auto;
+        }
+        &_empresas{
+            &_fila{
+                justify-content: space-between;
+            }
+        }
+    }
+
+}

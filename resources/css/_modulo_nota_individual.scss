@@ -1,0 +1,112 @@
+.modulo_nota_individual{
+    background-color: #F5F5F5;
+    margin: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    max-width: 1248px;
+
+    &_wrp{
+        padding: 0 20px 50px;
+    }
+    img{
+        margin-bottom: 20px;
+        margin-top: -30px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    &_comillas{
+        margin-bottom: 10px;
+    }
+    &_info{
+        position: relative;
+        #Trazado_8316{
+            fill: $azul;
+        }
+    }
+    &_texto{
+        font-size: 16px;
+        line-height: 20px;
+        font-style: italic;
+        margin-bottom: 30px;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+    &_persona{
+        position: relative;
+    }
+    &_decoracion{
+        width: 50px;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: $azul;
+    }
+    &_autor{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    &_cargo{
+        font-size: 14px;
+    }
+}
+
+.gen_tecnico .modulo_nota_individual{
+    &_info{
+        #Trazado_8316{
+            fill: $naranja;
+        }
+    }
+    &_decoracion{
+        background-color: $naranja;
+    }
+}
+
+.rojo .modulo_nota_individual{
+    &_info{
+        #Trazado_8316{
+            fill: $rojo;
+        }
+    }
+    &_decoracion{
+        background-color: $rojo;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .modulo_nota_individual{
+        margin: 50px auto ;
+        &_wrp{
+            display: flex;
+            padding: 40px;
+        }
+        img{
+            width: 457px;
+            height: 320px;
+            margin: 0 60px 0 0;
+        }
+        &_info{
+            max-width: 600px;
+            svg{
+                height: 27px;
+                width: 41px;
+            }
+        }
+        &_texto{
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+        &_persona{
+            position: absolute;
+            bottom: 20px;
+        }
+        &_cargo{
+            font-size: 12px;
+        }
+    }
+}

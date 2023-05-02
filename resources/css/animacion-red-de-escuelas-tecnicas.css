@@ -1,0 +1,724 @@
+@charset "UTF-8";
+.modulo_animacion_red_de_escuelas_tecnicas {
+  /* Textos en el círculo */
+  /* Botones de navegación */
+  /* Textos circulares dentro del SVG */
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas ul {
+  list-style-type: none;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animation-container {
+  position: relative;
+  max-width: 1348px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animation-container_ancla {
+  position: absolute;
+  margin-top: -200px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .main-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-holder {
+  width: 360px;
+  padding-top: 87px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-holder h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-list__item {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s ease, -webkit-transform .9s ease-out;
+  transition: opacity .3s ease, -webkit-transform .9s ease-out;
+  transition: opacity .3s ease, transform .9s ease-out;
+  transition: opacity .3s ease, transform .9s ease-out, -webkit-transform .9s ease-out;
+  -webkit-transform: matrix(1, 0, 0, 1, -200, 0);
+  transform: matrix(1, 0, 0, 1, -200, 0);
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-list__item.is-active {
+  height: 225px;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-list__item h4 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #F93822;
+  margin-bottom: 8px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .texts-list__item p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #000000;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .circles-holder {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  padding-right: 141px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle__container {
+  width: 524px;
+  height: 524px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle {
+  width: 466px;
+  color: #F93822;
+  z-index: 2;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-path {
+  fill: currentColor;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-progress {
+  visibility: hidden;
+  opacity: 1;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .progress-path {
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .progress-outline {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .hotspot,
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .progress-outline {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .hotspot {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  fill: #f30;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .hotspot .active-dot {
+  opacity: 0;
+  stroke: currentColor;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-knob {
+  z-index: 2;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-knob .pin {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-knob .knob {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-knob .hit-area {
+  fill: transparent;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .hotspot.is-active .active-dot {
+  opacity: 1;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .progress-circle .null {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .circular-spinner .circular-spinner__control-button {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .media-button.media-button--big .icon-button {
+  height: 42px;
+  width: 42px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .media-button.media-button--big .icon-button span {
+  width: 10px;
+  height: 10px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon {
+  position: absolute;
+  top: 333px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon.icon-pause span {
+  width: 15px;
+  height: 15px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon.icon-play span {
+  width: 12px;
+  height: 12px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .media-button .button--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .icon-button {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .icon-button.icon-button--filled {
+  border: none;
+  background-color: #666666;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .icon-button.icon-button--filled:hover {
+  background-color: #000000;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .icon-button.icon-button--filled:hover .icon-button__icon {
+  color: #ffffff;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .icon-button .icon-button__icon {
+  color: #fff;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label {
+  max-width: 210px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888888;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label.is-active {
+  color: #F93822;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:hover {
+  color: #F93822;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .illustration-svg {
+  position: absolute;
+  top: 195px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animation-kicker {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #F93822;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animate-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  z-index: 1;
+  margin-top: 55px;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animate-btns-container button {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #000000;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animate-btns-container button:hover {
+  background-color: #000;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .animate-btns-container button:hover svg path {
+  stroke: #fff;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .circular-texts {
+  width: 352px;
+  height: 352px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle {
+  width: 352px;
+  height: 176px;
+  border-top-left-radius: 176px;
+  border-top-right-radius: 176px;
+  border: 30px solid #DCDCDC;
+  border-bottom: 0;
+  position: relative;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle svg {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle {
+  width: 352px;
+  height: 176px;
+  border-bottom-left-radius: 176px;
+  border-bottom-right-radius: 176px;
+  border: 30px solid #C4C4C4;
+  border-top: 0;
+  position: relative;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle svg {
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  -webkit-transform: translateX(-50%) rotate(-5deg);
+  transform: translateX(-50%) rotate(-5deg);
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle svg.hide-desktop {
+  display: none;
+}
+
+.modulo_animacion_red_de_escuelas_tecnicas .big-circle-text {
+  position: absolute;
+  top: 43px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1230px) {
+  .modulo_animacion_red_de_escuelas_tecnicas .texts-holder {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .modulo_animacion_red_de_escuelas_tecnicas {
+    /*.circular-spinner-progress__label{
+        max-width: 180px;
+    }*/
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .texts-holder {
+    max-width: 285px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:first-child {
+    top: 18px !important;
+    -webkit-transform: translateX(calc(-50% + 60px)) !important;
+    transform: translateX(calc(-50% + 60px)) !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(2) {
+    top: 304px !important;
+    right: -30px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(3) {
+    top: 304px !important;
+    left: -110px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(4) {
+    top: 129px !important;
+    left: -115px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circles-holder {
+    padding-right: 84px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle__container {
+    width: 450px;
+    height: 450px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle {
+    width: 390px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .illustration-svg {
+    width: 120px;
+    height: auto;
+    display: block;
+    top: 164px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .animation-kicker {
+    top: 240px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon {
+    top: 270px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-texts {
+    width: 300px;
+    height: 300px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle svg {
+    width: 130px;
+    top: -19px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle {
+    width: 300px;
+    height: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle svg {
+    width: 200px;
+    bottom: -24px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .big-circle-text {
+    width: 220px;
+    height: auto;
+    display: block;
+    top: 41px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modulo_animacion_red_de_escuelas_tecnicas .animation-container {
+    padding: 0 20px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .main-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .texts-holder {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding: 0;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circles-holder {
+    width: 360px;
+    height: auto;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding: 30px 0;
+    margin-bottom: 62px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label {
+    max-width: 105px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:first-child {
+    max-width: unset;
+    top: 0 !important;
+    -webkit-transform: translateX(calc(-50% + 85px)) !important;
+    transform: translateX(calc(-50% + 85px)) !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(2) {
+    top: 278px !important;
+    right: -93px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(3) {
+    top: 278px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(4) {
+    max-width: 120px;
+    top: 111px !important;
+    left: -98px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle__container {
+    width: 360px;
+    height: 360px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle {
+    width: 330px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-texts {
+    width: 250px;
+    height: 250px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle {
+    width: 250px;
+    height: 125px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    border-width: 20px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle svg {
+    width: 80px;
+    top: -18px;
+    -webkit-transform: translateX(-50%) rotate(2deg);
+    transform: translateX(-50%) rotate(2deg);
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle {
+    width: 250px;
+    height: 125px;
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    border-width: 20px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle svg.hide-mobile {
+    display: none;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle svg.hide-desktop {
+    width: 142px;
+    height: auto;
+    display: block;
+    bottom: -15px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .big-circle-text {
+    width: 190px;
+    top: 31px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle .hotspot .active-dot {
+    r: 15;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-knob .knob {
+    stroke-width: 5px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle .drag-knob .pin {
+    stroke-width: 7px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .illustration-svg {
+    display: none;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .animation-kicker {
+    display: none;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon {
+    width: 38px;
+    height: 38px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon.icon-play svg {
+    width: 15px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .media-button .media-button__icon.icon-pause svg {
+    width: 15px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .texts-holder h3 {
+    display: none;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .texts-list__item h4 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .texts-list__item.is-active {
+    height: 211px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modulo_animacion_red_de_escuelas_tecnicas .circles-holder {
+    width: 167px;
+    padding: 20px 0;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle__container {
+    width: 167px;
+    height: 167px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .progress-circle {
+    width: 160px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:first-child {
+    white-space: nowrap;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(2) {
+    top: 137px !important;
+    right: -95px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(3) {
+    top: 137px !important;
+    left: -89px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-spinner-progress__label:nth-child(4) {
+    top: 56px !important;
+    left: -103px !important;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .circular-texts {
+    width: 120px;
+    height: 120px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle {
+    width: 120px;
+    height: 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-width: 10px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .first-semi-circle svg {
+    width: 54px;
+    top: -14px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle {
+    width: 120px;
+    height: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-width: 10px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .second-semi-circle svg.hide-desktop {
+    width: 81px;
+    bottom: -7px;
+  }
+  .modulo_animacion_red_de_escuelas_tecnicas .big-circle-text {
+    width: 90px;
+    top: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modulo_animacion_red_de_escuelas_tecnicas .circles-holder {
+    left: -4px;
+  }
+}
+/*# sourceMappingURL=animacion-red-de-escuelas-tecnicas.css.map */

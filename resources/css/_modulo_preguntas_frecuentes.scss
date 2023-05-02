@@ -1,0 +1,105 @@
+.modulo_preguntas_frecuentes{
+    padding: 100px 20px 50px;
+    max-width: 1248px;
+    margin: 0 auto;
+    width: 100%;
+    &_titulo{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        &_decoracion{
+            width: 95px;
+            height: 5px;
+            background-color: $azul;
+        }
+        &_wrp{
+            margin-bottom: 30px;
+        }
+    }
+    &_pregunta{
+        border: 1px solid #D9E3EB;
+        background-color: #F0F7FD;
+        border-radius: 7px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        &_principal{
+            display: flex;
+            align-items: center;
+            &_svg{
+                margin-right: 10px;
+                cursor: pointer;
+                #Rectángulo_56305{
+                    display: block;
+                }
+            }
+            &_titulo{
+                font-size: 16px;
+                color: #2A2A2A;
+                font-weight: 600;
+                line-height: 18px;
+            }
+        }
+    }
+    &_info{
+        display: none;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 0;
+    }
+}
+
+.modulo_preguntas_frecuentes_pregunta.no_desplegado {
+        background: none!important;
+}
+
+.modulo_preguntas_frecuentes_pregunta_principal_svg.menos{
+        #Rectángulo_56305{
+            display: none;
+        }
+}
+
+.modulo_preguntas_frecuentes.ficha{
+    padding: 0 0 50px;
+    .modulo_preguntas_frecuentes{
+        &_info{
+            p{
+                font-size: 16px;
+                line-height: 22px;
+            }
+            ul{
+                padding: 0 20px;
+                margin-bottom: 20px;
+            }
+            li{
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .modulo_preguntas_frecuentes{
+        padding: 80px 50px 100px;
+        &_pregunta{
+            &_principal{
+                &_titulo{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .modulo_preguntas_frecuentes.ficha{
+        padding-left: 75px;
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    .modulo_preguntas_frecuentes{
+            max-width: 1348px;
+    }
+
+}
+

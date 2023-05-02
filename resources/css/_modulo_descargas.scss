@@ -1,0 +1,48 @@
+.modulo_descargas{
+    &_wrp{
+        width: 100%;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding: 27px 30px;
+        margin-bottom: 50px;
+        margin-top: -18px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 30px;
+    &_titulo{
+        font-size: 18px;
+        font-weight: 600; 
+    } 
+    }
+    &_archivo{
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+        a{
+            color:#0072CE;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.modulo_descargas.ficha{
+    padding-left: 0;
+}
+
+@media only screen and (min-width: 1024px){
+    .modulo_descargas{
+        padding-left: 75px;
+        &_wrp{
+            margin-top: 0px;
+        }
+        &_titulo{
+            font-size: 16px;
+            font-weight: 600; 
+        } 
+
+    }
+}
